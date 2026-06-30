@@ -6,6 +6,11 @@ export type Product = {
   description: string;
   image: string;
   tag?: string;
+  dimensions?: {
+    label: string;
+    value: string;
+  }[];
+  features?: string[];
 };
 
 export const products: Product[] = [
@@ -18,6 +23,21 @@ export const products: Product[] = [
     description: "Modern mid-back task chair with breathable mesh and ergonomic lumbar support. Ideal for dynamic work environments.",
     image: "/products/chairs/m250.jpg",
     tag: "New",
+    dimensions: [
+      { label: "Overall Height", value: "91–103 cm" },
+      { label: "Seat Width", value: "50 cm" },
+      { label: "Seat Depth", value: "47 cm" },
+      { label: "Seat Height", value: "44–56 cm" },
+      { label: "Armrest Height", value: "63–75 cm" },
+    ],
+    features: [
+      "Breathable mesh backrest",
+      "Ergonomic lumbar support",
+      "Height-adjustable seat",
+      "360° swivel base",
+      "Nylon 5-star base",
+      "Tilt tension control",
+    ],
   },
   {
     id: "m350bk",
@@ -27,6 +47,21 @@ export const products: Product[] = [
     description: "Sleek black mesh executive chair with synchronized tilt mechanism and adjustable armrests.",
     image: "/products/chairs/m350bk.jpg",
     tag: "Bestseller",
+    dimensions: [
+      { label: "Overall Height", value: "95–107 cm" },
+      { label: "Seat Width", value: "52 cm" },
+      { label: "Seat Depth", value: "49 cm" },
+      { label: "Seat Height", value: "45–57 cm" },
+      { label: "Armrest Height", value: "65–77 cm" },
+    ],
+    features: [
+      "Full mesh back panel",
+      "Synchronized tilt mechanism",
+      "2D adjustable armrests",
+      "Lumbar support pad",
+      "Polished aluminum base",
+      "PU casters for hard floors",
+    ],
   },
   {
     id: "m350gr",
@@ -35,6 +70,21 @@ export const products: Product[] = [
     price: "Contact for pricing",
     description: "Grey mesh executive chair with synchronized tilt mechanism and adjustable armrests.",
     image: "/products/chairs/m350gr.jpg",
+    dimensions: [
+      { label: "Overall Height", value: "95–107 cm" },
+      { label: "Seat Width", value: "52 cm" },
+      { label: "Seat Depth", value: "49 cm" },
+      { label: "Seat Height", value: "45–57 cm" },
+      { label: "Armrest Height", value: "65–77 cm" },
+    ],
+    features: [
+      "Full mesh back panel",
+      "Synchronized tilt mechanism",
+      "2D adjustable armrests",
+      "Lumbar support pad",
+      "Polished aluminum base",
+      "PU casters for hard floors",
+    ],
   },
   {
     id: "m750bk",
@@ -44,6 +94,21 @@ export const products: Product[] = [
     description: "Premium high-back executive chair in black. Full lumbar support, headrest, and multi-function mechanism.",
     image: "/products/chairs/m750bk.jpg",
     tag: "Popular",
+    dimensions: [
+      { label: "Overall Height", value: "118–130 cm" },
+      { label: "Seat Width", value: "53 cm" },
+      { label: "Seat Depth", value: "50 cm" },
+      { label: "Seat Height", value: "46–58 cm" },
+      { label: "Backrest Height", value: "72 cm" },
+    ],
+    features: [
+      "High-back mesh design",
+      "Adjustable headrest",
+      "Multi-function tilt mechanism",
+      "3D armrests",
+      "Independent lumbar adjustment",
+      "Aluminum 5-star base",
+    ],
   },
   {
     id: "m750gr",
@@ -52,6 +117,21 @@ export const products: Product[] = [
     price: "Contact for pricing",
     description: "Premium high-back executive chair in grey. Full lumbar support, headrest, and multi-function mechanism.",
     image: "/products/chairs/m750gr.jpg",
+    dimensions: [
+      { label: "Overall Height", value: "118–130 cm" },
+      { label: "Seat Width", value: "53 cm" },
+      { label: "Seat Depth", value: "50 cm" },
+      { label: "Seat Height", value: "46–58 cm" },
+      { label: "Backrest Height", value: "72 cm" },
+    ],
+    features: [
+      "High-back mesh design",
+      "Adjustable headrest",
+      "Multi-function tilt mechanism",
+      "3D armrests",
+      "Independent lumbar adjustment",
+      "Aluminum 5-star base",
+    ],
   },
   {
     id: "m900bk",
@@ -61,6 +141,21 @@ export const products: Product[] = [
     description: "Top-tier ergonomic chair with advanced lumbar adjustment, 4D armrests, and breathable mesh for all-day comfort.",
     image: "/products/chairs/m900bk.jpg",
     tag: "New",
+    dimensions: [
+      { label: "Overall Height", value: "120–135 cm" },
+      { label: "Seat Width", value: "54 cm" },
+      { label: "Seat Depth", value: "45–52 cm (adjustable)" },
+      { label: "Seat Height", value: "45–57 cm" },
+      { label: "Backrest Height", value: "76 cm" },
+    ],
+    features: [
+      "Advanced lumbar with depth & height adjustment",
+      "4D adjustable armrests",
+      "Seat depth adjustment",
+      "Recline with lock positions",
+      "Breathable full-mesh construction",
+      "Polished aluminum base with PU casters",
+    ],
   },
   {
     id: "m180b",
@@ -69,6 +164,19 @@ export const products: Product[] = [
     price: "Contact for pricing",
     description: "Compact mesh task chair with contoured backrest and height adjustment. Perfect for focused work sessions.",
     image: "/products/chairs/m180b.jpg",
+    dimensions: [
+      { label: "Overall Height", value: "84–96 cm" },
+      { label: "Seat Width", value: "47 cm" },
+      { label: "Seat Depth", value: "44 cm" },
+      { label: "Seat Height", value: "42–54 cm" },
+    ],
+    features: [
+      "Contoured mesh backrest",
+      "Height-adjustable seat",
+      "Tilt tension control",
+      "Fixed armrests",
+      "Nylon 5-star base",
+    ],
   },
   {
     id: "m275",
@@ -77,6 +185,19 @@ export const products: Product[] = [
     price: "Contact for pricing",
     description: "Mid-back office chair with foam seat, mesh back and durable nylon base. A reliable everyday workhorse.",
     image: "/products/chairs/m275.jpg",
+    dimensions: [
+      { label: "Overall Height", value: "90–102 cm" },
+      { label: "Seat Width", value: "49 cm" },
+      { label: "Seat Depth", value: "47 cm" },
+      { label: "Seat Height", value: "43–55 cm" },
+    ],
+    features: [
+      "Foam-padded seat",
+      "Breathable mesh backrest",
+      "Tilt mechanism",
+      "Height-adjustable armrests",
+      "Durable nylon base",
+    ],
   },
   {
     id: "m390",
@@ -85,6 +206,20 @@ export const products: Product[] = [
     price: "Contact for pricing",
     description: "Executive mesh chair with butterfly mechanism, adjustable headrest, and padded armrests.",
     image: "/products/chairs/m390.jpg",
+    dimensions: [
+      { label: "Overall Height", value: "115–128 cm" },
+      { label: "Seat Width", value: "52 cm" },
+      { label: "Seat Depth", value: "49 cm" },
+      { label: "Seat Height", value: "44–56 cm" },
+      { label: "Backrest Height", value: "68 cm" },
+    ],
+    features: [
+      "Butterfly synchronized mechanism",
+      "Adjustable headrest",
+      "Padded PU armrests",
+      "Lumbar support",
+      "Polished aluminum base",
+    ],
   },
   {
     id: "m500",
@@ -93,6 +228,21 @@ export const products: Product[] = [
     price: "Contact for pricing",
     description: "Full-mesh ergonomic chair with independent seat depth adjustment and 3D armrests.",
     image: "/products/chairs/m500.jpg",
+    dimensions: [
+      { label: "Overall Height", value: "116–130 cm" },
+      { label: "Seat Width", value: "53 cm" },
+      { label: "Seat Depth", value: "44–52 cm (adjustable)" },
+      { label: "Seat Height", value: "45–57 cm" },
+      { label: "Backrest Height", value: "70 cm" },
+    ],
+    features: [
+      "Full-mesh seat and back",
+      "Independent seat depth slider",
+      "3D adjustable armrests",
+      "Synchronized tilt",
+      "Lumbar support system",
+      "Aluminum base",
+    ],
   },
   {
     id: "sec35bk",
@@ -101,6 +251,19 @@ export const products: Product[] = [
     price: "Contact for pricing",
     description: "Classic mesh back chair with black nylon frame. Lightweight, stackable, and built for multi-use spaces.",
     image: "/products/chairs/sec35bk.jpg",
+    dimensions: [
+      { label: "Overall Height", value: "86 cm" },
+      { label: "Seat Width", value: "46 cm" },
+      { label: "Seat Depth", value: "44 cm" },
+      { label: "Seat Height", value: "46 cm (fixed)" },
+    ],
+    features: [
+      "Mesh backrest",
+      "Stackable up to 6 units",
+      "Lightweight frame",
+      "No-arm option available",
+      "Ideal for training rooms & conference halls",
+    ],
   },
   {
     id: "sec380bk",
@@ -109,6 +272,19 @@ export const products: Product[] = [
     price: "Contact for pricing",
     description: "Mesh back and fabric seat combination chair. Ergonomic design suited for extended office use.",
     image: "/products/chairs/sec380bk.jpg",
+    dimensions: [
+      { label: "Overall Height", value: "92–104 cm" },
+      { label: "Seat Width", value: "50 cm" },
+      { label: "Seat Depth", value: "47 cm" },
+      { label: "Seat Height", value: "44–56 cm" },
+    ],
+    features: [
+      "Mesh backrest with fabric seat",
+      "Height-adjustable gas lift",
+      "Tilt-lock mechanism",
+      "Fixed armrests",
+      "Nylon 5-star base",
+    ],
   },
   {
     id: "8322h-bk",
@@ -117,6 +293,20 @@ export const products: Product[] = [
     price: "Contact for pricing",
     description: "Classic high-back executive chair with PU leather seat and chrome base. Timeless professional aesthetic.",
     image: "/products/chairs/8322h-bk.jpg",
+    dimensions: [
+      { label: "Overall Height", value: "117–127 cm" },
+      { label: "Seat Width", value: "53 cm" },
+      { label: "Seat Depth", value: "50 cm" },
+      { label: "Seat Height", value: "46–56 cm" },
+      { label: "Backrest Height", value: "70 cm" },
+    ],
+    features: [
+      "PU leather upholstery",
+      "High-back design",
+      "Chrome 5-star base",
+      "Rocking mechanism with lock",
+      "Padded armrests",
+    ],
   },
   {
     id: "9373h-fabric",
@@ -125,6 +315,21 @@ export const products: Product[] = [
     price: "Contact for pricing",
     description: "High-back fabric office chair with ergonomic curves, height adjustment, and rocking mechanism.",
     image: "/products/chairs/9373h-fabric.jpg",
+    dimensions: [
+      { label: "Overall Height", value: "110–122 cm" },
+      { label: "Seat Width", value: "51 cm" },
+      { label: "Seat Depth", value: "48 cm" },
+      { label: "Seat Height", value: "44–56 cm" },
+      { label: "Backrest Height", value: "65 cm" },
+    ],
+    features: [
+      "Fabric upholstery",
+      "High-back ergonomic frame",
+      "Height adjustment",
+      "Rocking / tilt mechanism",
+      "Fixed padded armrests",
+      "Nylon base",
+    ],
   },
 
   // --- DESKS ---
@@ -136,6 +341,18 @@ export const products: Product[] = [
     description: "Clean-lined executive desk with generous surface area and integrated cable management.",
     image: "/products/desks/d295.jpg",
     tag: "Popular",
+    dimensions: [
+      { label: "Width", value: "1800 mm" },
+      { label: "Depth", value: "900 mm" },
+      { label: "Height", value: "750 mm" },
+    ],
+    features: [
+      "Integrated cable management tray",
+      "Powder-coated steel legs",
+      "Melamine laminate surface",
+      "Edge banding on all sides",
+      "Modesty panel included",
+    ],
   },
   {
     id: "d380",
@@ -144,6 +361,19 @@ export const products: Product[] = [
     price: "Contact for pricing",
     description: "Modern L-shaped workstation with ample surface space and powder-coated steel legs.",
     image: "/products/desks/d380.jpg",
+    dimensions: [
+      { label: "Main Width", value: "1600 mm" },
+      { label: "Return Width", value: "1200 mm" },
+      { label: "Depth", value: "800 mm" },
+      { label: "Height", value: "750 mm" },
+    ],
+    features: [
+      "L-shaped configuration",
+      "Dual surface workspace",
+      "Powder-coated steel frame",
+      "Melamine top surface",
+      "Grommet holes for cable management",
+    ],
   },
   {
     id: "d385",
@@ -152,6 +382,18 @@ export const products: Product[] = [
     price: "Contact for pricing",
     description: "Contemporary executive desk with sleek panel base and refined finish options.",
     image: "/products/desks/d385.jpg",
+    dimensions: [
+      { label: "Width", value: "1800 mm" },
+      { label: "Depth", value: "900 mm" },
+      { label: "Height", value: "750 mm" },
+    ],
+    features: [
+      "Panel-leg construction",
+      "Refined laminate finishes",
+      "Matching storage pedestal available",
+      "PVC edge banding",
+      "Cable management grommets",
+    ],
   },
   {
     id: "d450",
@@ -161,6 +403,19 @@ export const products: Product[] = [
     description: "Spacious double-pedestal executive desk with lockable drawers and premium wood veneer top.",
     image: "/products/desks/d450.jpg",
     tag: "Bestseller",
+    dimensions: [
+      { label: "Width", value: "2000 mm" },
+      { label: "Depth", value: "950 mm" },
+      { label: "Height", value: "760 mm" },
+    ],
+    features: [
+      "Premium wood veneer top",
+      "Double lockable pedestal",
+      "3 drawers per pedestal",
+      "Central locking system",
+      "Solid wood edge detail",
+      "Soft-close drawer runners",
+    ],
   },
   {
     id: "wk22",
@@ -169,6 +424,19 @@ export const products: Product[] = [
     price: "Contact for pricing",
     description: "Compact open workstation with integrated privacy screen. Perfect for call centers and open-plan offices.",
     image: "/products/desks/wk22.jpg",
+    dimensions: [
+      { label: "Width", value: "1200 mm" },
+      { label: "Depth", value: "600 mm" },
+      { label: "Height", value: "750 mm" },
+      { label: "Screen Height", value: "400 mm" },
+    ],
+    features: [
+      "Fabric-wrapped privacy screen",
+      "Under-desk cable management",
+      "Powder-coated steel legs",
+      "2-person bench option available",
+      "Melamine work surface",
+    ],
   },
   {
     id: "wk24",
@@ -177,6 +445,18 @@ export const products: Product[] = [
     price: "Contact for pricing",
     description: "Modular workstation system with configurable layout options. Scales with your team.",
     image: "/products/desks/wk24.jpg",
+    dimensions: [
+      { label: "Width per station", value: "1400 mm" },
+      { label: "Depth", value: "700 mm" },
+      { label: "Height", value: "750 mm" },
+    ],
+    features: [
+      "Modular & scalable design",
+      "Shared structural frame",
+      "Central cable spine",
+      "Optional overhead storage",
+      "Acoustic screen options",
+    ],
   },
   {
     id: "wk42",
@@ -185,6 +465,19 @@ export const products: Product[] = [
     price: "Contact for pricing",
     description: "Four-seat open workstation bench with central cable tray and acoustic divider ready.",
     image: "/products/desks/wk42.jpg",
+    dimensions: [
+      { label: "Total Width", value: "2800 mm" },
+      { label: "Depth", value: "1400 mm" },
+      { label: "Height", value: "750 mm" },
+      { label: "Seats", value: "4" },
+    ],
+    features: [
+      "4-seat bench configuration",
+      "Central cable management tray",
+      "Acoustic screen-ready posts",
+      "Shared structural leg frame",
+      "Power module compatible",
+    ],
   },
   {
     id: "repdark",
@@ -194,6 +487,20 @@ export const products: Product[] = [
     description: "Curved reception desk in dark finish with LED accent lighting. Makes a commanding first impression.",
     image: "/products/desks/repdark.jpg",
     tag: "New",
+    dimensions: [
+      { label: "Width", value: "1800 mm" },
+      { label: "Depth", value: "700 mm" },
+      { label: "Counter Height", value: "1100 mm" },
+      { label: "Working Height", value: "750 mm" },
+    ],
+    features: [
+      "Curved front panel",
+      "Integrated LED accent lighting",
+      "Dual-height counter",
+      "Dark wood-grain finish",
+      "Internal storage compartment",
+      "Cable access grommets",
+    ],
   },
   {
     id: "repwhite",
@@ -202,6 +509,19 @@ export const products: Product[] = [
     price: "Contact for pricing",
     description: "Curved reception desk in white gloss with integrated counter height. Sleek and professional.",
     image: "/products/desks/repwhite.jpg",
+    dimensions: [
+      { label: "Width", value: "1800 mm" },
+      { label: "Depth", value: "700 mm" },
+      { label: "Counter Height", value: "1100 mm" },
+      { label: "Working Height", value: "750 mm" },
+    ],
+    features: [
+      "Curved front panel",
+      "High-gloss white finish",
+      "Dual-height counter",
+      "Internal storage compartment",
+      "Cable access grommets",
+    ],
   },
   {
     id: "electric",
@@ -211,6 +531,20 @@ export const products: Product[] = [
     description: "Electric sit-stand desk with dual motors, memory presets, and anti-collision detection. A healthier workday starts here.",
     image: "/products/desks/electric.jpg",
     tag: "Popular",
+    dimensions: [
+      { label: "Width", value: "1600 mm" },
+      { label: "Depth", value: "800 mm" },
+      { label: "Height Range", value: "680–1180 mm" },
+      { label: "Lifting Capacity", value: "100 kg" },
+    ],
+    features: [
+      "Dual-motor lifting system",
+      "4 memory height presets",
+      "Anti-collision safety detection",
+      "Sit-stand reminder function",
+      "Built-in cable management",
+      "Quiet operation ≤ 45 dB",
+    ],
   },
 
   // --- SOFAS ---
@@ -222,6 +556,20 @@ export const products: Product[] = [
     description: "Contemporary three-seat lounge sofa in beige with sculpted cushions and solid wood legs. Elevates any reception or lounge area.",
     image: "/products/sofas/aura-bg.jpg",
     tag: "Bestseller",
+    dimensions: [
+      { label: "Width", value: "2100 mm" },
+      { label: "Depth", value: "900 mm" },
+      { label: "Height", value: "830 mm" },
+      { label: "Seat Height", value: "420 mm" },
+      { label: "Seats", value: "3" },
+    ],
+    features: [
+      "High-density foam cushions",
+      "Premium fabric upholstery",
+      "Solid wood tapered legs",
+      "Removable cushion covers",
+      "Commercial-grade frame",
+    ],
   },
   {
     id: "elisse-bl",
@@ -231,6 +579,20 @@ export const products: Product[] = [
     description: "Statement lounge sofa in rich blue fabric with tapered legs. Bold color meets refined silhouette.",
     image: "/products/sofas/elisse-bl.jpg",
     tag: "New",
+    dimensions: [
+      { label: "Width", value: "1900 mm" },
+      { label: "Depth", value: "860 mm" },
+      { label: "Height", value: "800 mm" },
+      { label: "Seat Height", value: "400 mm" },
+      { label: "Seats", value: "3" },
+    ],
+    features: [
+      "Rich blue fabric upholstery",
+      "Tapered wooden legs",
+      "High-resilience foam",
+      "Solid hardwood frame",
+      "Stain-resistant treatment",
+    ],
   },
   {
     id: "lumina-bg",
@@ -239,6 +601,20 @@ export const products: Product[] = [
     price: "Contact for pricing",
     description: "Low-profile lounge sofa with clean lines and channel-stitched cushions. Modern and inviting.",
     image: "/products/sofas/lumina-bg.jpg",
+    dimensions: [
+      { label: "Width", value: "2000 mm" },
+      { label: "Depth", value: "900 mm" },
+      { label: "Height", value: "780 mm" },
+      { label: "Seat Height", value: "390 mm" },
+      { label: "Seats", value: "3" },
+    ],
+    features: [
+      "Channel-stitched cushion detail",
+      "Low-profile modern silhouette",
+      "Premium beige fabric",
+      "Brushed metal legs",
+      "High-density seat foam",
+    ],
   },
   {
     id: "louren-bg",
@@ -247,6 +623,20 @@ export const products: Product[] = [
     price: "Contact for pricing",
     description: "Compact two-seat lounge sofa with round armrests and premium fabric upholstery.",
     image: "/products/sofas/louren-bg.jpg",
+    dimensions: [
+      { label: "Width", value: "1500 mm" },
+      { label: "Depth", value: "820 mm" },
+      { label: "Height", value: "810 mm" },
+      { label: "Seat Height", value: "420 mm" },
+      { label: "Seats", value: "2" },
+    ],
+    features: [
+      "Rounded barrel armrests",
+      "Premium fabric upholstery",
+      "Compact two-seat layout",
+      "Solid wood legs",
+      "High-resilience cushions",
+    ],
   },
   {
     id: "ondara-bg",
@@ -256,6 +646,20 @@ export const products: Product[] = [
     description: "Curved modular lounge sofa with deep seating and plush cushions. Designed for collaboration zones.",
     image: "/products/sofas/ondara-bg.jpg",
     tag: "Popular",
+    dimensions: [
+      { label: "Width", value: "2300 mm" },
+      { label: "Depth", value: "1000 mm" },
+      { label: "Height", value: "790 mm" },
+      { label: "Seat Height", value: "400 mm" },
+      { label: "Seats", value: "3–4" },
+    ],
+    features: [
+      "Curved modular configuration",
+      "Deep plush seating",
+      "Sectional expandable design",
+      "Premium boucle fabric",
+      "Solid base platform",
+    ],
   },
   {
     id: "ovalia-bg",
@@ -264,6 +668,20 @@ export const products: Product[] = [
     price: "Contact for pricing",
     description: "Oval-backed accent sofa with distinctive silhouette. A design-forward statement for modern lobbies.",
     image: "/products/sofas/ovalia-bg.jpg",
+    dimensions: [
+      { label: "Width", value: "1700 mm" },
+      { label: "Depth", value: "870 mm" },
+      { label: "Height", value: "860 mm" },
+      { label: "Seat Height", value: "410 mm" },
+      { label: "Seats", value: "2–3" },
+    ],
+    features: [
+      "Oval sculptural backrest",
+      "Statement lobby design",
+      "Premium fabric upholstery",
+      "Brass-finished metal legs",
+      "High-density foam",
+    ],
   },
   {
     id: "tessa-bg",
@@ -272,6 +690,20 @@ export const products: Product[] = [
     price: "Contact for pricing",
     description: "Three-seat sofa with button-tufted back and tapered walnut legs. Classic elegance for professional spaces.",
     image: "/products/sofas/tessa-bg.jpg",
+    dimensions: [
+      { label: "Width", value: "2050 mm" },
+      { label: "Depth", value: "870 mm" },
+      { label: "Height", value: "820 mm" },
+      { label: "Seat Height", value: "430 mm" },
+      { label: "Seats", value: "3" },
+    ],
+    features: [
+      "Button-tufted backrest",
+      "Tapered walnut wood legs",
+      "Classic Chesterfield-inspired design",
+      "High-resilience foam",
+      "Premium linen-blend fabric",
+    ],
   },
   {
     id: "velora-br",
@@ -280,5 +712,19 @@ export const products: Product[] = [
     price: "Contact for pricing",
     description: "Luxurious lounge sofa in warm brown with wrap-around armrests and deep seat cushions.",
     image: "/products/sofas/velora-br.jpg",
+    dimensions: [
+      { label: "Width", value: "2100 mm" },
+      { label: "Depth", value: "950 mm" },
+      { label: "Height", value: "850 mm" },
+      { label: "Seat Height", value: "420 mm" },
+      { label: "Seats", value: "3" },
+    ],
+    features: [
+      "Wrap-around armrest design",
+      "Warm brown premium fabric",
+      "Deep loose cushion seating",
+      "Solid hardwood frame",
+      "Stainless steel leg tips",
+    ],
   },
 ];

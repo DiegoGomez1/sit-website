@@ -11,7 +11,8 @@ export default function Footer() {
             alt="SIT"
             width={80}
             height={64}
-            className="h-12 w-auto object-contain mb-4 brightness-0 invert"
+            className="h-12 w-auto object-contain mb-4"
+            style={{ filter: "invert(1)", mixBlendMode: "screen" }}
           />
           <p className="text-sm leading-relaxed max-w-xs">
             Designing and manufacturing inspiring office furniture for modern
