@@ -1,5 +1,6 @@
 import Link from "next/link";
 import ProductCard from "@/components/ProductCard";
+import HeroCarousel from "@/components/HeroCarousel";
 import { products } from "@/lib/products";
 
 export default function HomePage() {
@@ -56,15 +57,7 @@ export default function HomePage() {
             </div>
           </div>
 
-          <div className="hidden lg:flex items-center justify-center">
-            <div className="relative w-80 h-80">
-              <div className="absolute inset-0 border border-[#2d6e44]/30 rounded-3xl rotate-6" />
-              <div className="absolute inset-4 border border-[#2d6e44]/20 rounded-2xl -rotate-3" />
-              <div className="absolute inset-8 bg-[#1c4a2e]/20 rounded-xl flex items-center justify-center">
-                <span className="text-8xl">🪑</span>
-              </div>
-            </div>
-          </div>
+          <HeroCarousel />
         </div>
 
         <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2">
