@@ -28,13 +28,13 @@ export default function HeroCarousel() {
 
   return (
     <div className="hidden lg:flex items-center justify-center">
-      <div className="relative w-80 h-80">
+      <div className="relative w-[420px] h-[420px]">
         {/* Decorative borders */}
         <div className="absolute inset-0 border border-[#2d6e44]/30 rounded-3xl rotate-6" />
         <div className="absolute inset-4 border border-[#2d6e44]/20 rounded-2xl -rotate-3" />
 
         {/* Image stack */}
-        <div className="absolute inset-8 bg-[#1c4a2e]/20 rounded-xl overflow-hidden">
+        <div className="absolute inset-5 bg-[#1c4a2e]/20 rounded-xl overflow-hidden">
           {slides.map((s, i) => (
             <div
               key={s.id}
@@ -49,9 +49,9 @@ export default function HeroCarousel() {
                 src={s.src}
                 alt={s.name}
                 fill
-                className="object-contain p-3"
+                className="object-contain p-1"
                 style={{ filter: "drop-shadow(0 16px 32px rgba(0,0,0,0.5))" }}
-                sizes="256px"
+                sizes="410px"
                 priority={i === 0}
               />
             </div>

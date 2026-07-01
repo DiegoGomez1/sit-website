@@ -6,6 +6,7 @@ export type Product = {
   description: string;
   image: string;
   tag?: string;
+  imageFit?: "cover" | "plain";
   dimensions?: {
     label: string;
     value: string;
@@ -341,6 +342,7 @@ export const products: Product[] = [
     description: "Clean-lined executive desk with generous surface area and integrated cable management.",
     image: "/products/desks/d295.jpg",
     tag: "Popular",
+    imageFit: "plain",
     dimensions: [
       { label: "Width", value: "1800 mm" },
       { label: "Depth", value: "900 mm" },
@@ -361,6 +363,7 @@ export const products: Product[] = [
     price: "Contact for pricing",
     description: "Modern L-shaped workstation with ample surface space and powder-coated steel legs.",
     image: "/products/desks/d380.jpg",
+    imageFit: "cover",
     dimensions: [
       { label: "Main Width", value: "1600 mm" },
       { label: "Return Width", value: "1200 mm" },
@@ -382,6 +385,7 @@ export const products: Product[] = [
     price: "Contact for pricing",
     description: "Contemporary executive desk with sleek panel base and refined finish options.",
     image: "/products/desks/d385.jpg",
+    imageFit: "cover",
     dimensions: [
       { label: "Width", value: "1800 mm" },
       { label: "Depth", value: "900 mm" },
@@ -403,6 +407,7 @@ export const products: Product[] = [
     description: "Spacious double-pedestal executive desk with lockable drawers and premium wood veneer top.",
     image: "/products/desks/d450.jpg",
     tag: "Bestseller",
+    imageFit: "cover",
     dimensions: [
       { label: "Width", value: "2000 mm" },
       { label: "Depth", value: "950 mm" },
@@ -424,6 +429,7 @@ export const products: Product[] = [
     price: "Contact for pricing",
     description: "Compact open workstation with integrated privacy screen. Perfect for call centers and open-plan offices.",
     image: "/products/desks/wk22.jpg",
+    imageFit: "plain",
     dimensions: [
       { label: "Width", value: "1200 mm" },
       { label: "Depth", value: "600 mm" },
@@ -445,6 +451,7 @@ export const products: Product[] = [
     price: "Contact for pricing",
     description: "Modular workstation system with configurable layout options. Scales with your team.",
     image: "/products/desks/wk24.jpg",
+    imageFit: "plain",
     dimensions: [
       { label: "Width per station", value: "1400 mm" },
       { label: "Depth", value: "700 mm" },
@@ -465,6 +472,7 @@ export const products: Product[] = [
     price: "Contact for pricing",
     description: "Four-seat open workstation bench with central cable tray and acoustic divider ready.",
     image: "/products/desks/wk42.jpg",
+    imageFit: "cover",
     dimensions: [
       { label: "Total Width", value: "2800 mm" },
       { label: "Depth", value: "1400 mm" },
@@ -487,6 +495,7 @@ export const products: Product[] = [
     description: "Curved reception desk in dark finish with LED accent lighting. Makes a commanding first impression.",
     image: "/products/desks/repdark.jpg",
     tag: "New",
+    imageFit: "cover",
     dimensions: [
       { label: "Width", value: "1800 mm" },
       { label: "Depth", value: "700 mm" },
@@ -509,6 +518,7 @@ export const products: Product[] = [
     price: "Contact for pricing",
     description: "Curved reception desk in white gloss with integrated counter height. Sleek and professional.",
     image: "/products/desks/repwhite.jpg",
+    imageFit: "cover",
     dimensions: [
       { label: "Width", value: "1800 mm" },
       { label: "Depth", value: "700 mm" },
@@ -531,6 +541,7 @@ export const products: Product[] = [
     description: "Electric sit-stand desk with dual motors, memory presets, and anti-collision detection. A healthier workday starts here.",
     image: "/products/desks/electric.jpg",
     tag: "Popular",
+    imageFit: "cover",
     dimensions: [
       { label: "Width", value: "1600 mm" },
       { label: "Depth", value: "800 mm" },
@@ -556,6 +567,7 @@ export const products: Product[] = [
     description: "Contemporary three-seat lounge sofa in beige with sculpted cushions and solid wood legs. Elevates any reception or lounge area.",
     image: "/products/sofas/aura-bg.jpg",
     tag: "Bestseller",
+    imageFit: "plain",
     dimensions: [
       { label: "Width", value: "2100 mm" },
       { label: "Depth", value: "900 mm" },
@@ -579,6 +591,7 @@ export const products: Product[] = [
     description: "Statement lounge sofa in rich blue fabric with tapered legs. Bold color meets refined silhouette.",
     image: "/products/sofas/elisse-bl.jpg",
     tag: "New",
+    imageFit: "plain",
     dimensions: [
       { label: "Width", value: "1900 mm" },
       { label: "Depth", value: "860 mm" },
@@ -601,6 +614,7 @@ export const products: Product[] = [
     price: "Contact for pricing",
     description: "Low-profile lounge sofa with clean lines and channel-stitched cushions. Modern and inviting.",
     image: "/products/sofas/lumina-bg.jpg",
+    imageFit: "plain",
     dimensions: [
       { label: "Width", value: "2000 mm" },
       { label: "Depth", value: "900 mm" },
@@ -623,6 +637,7 @@ export const products: Product[] = [
     price: "Contact for pricing",
     description: "Compact two-seat lounge sofa with round armrests and premium fabric upholstery.",
     image: "/products/sofas/louren-bg.jpg",
+    imageFit: "plain",
     dimensions: [
       { label: "Width", value: "1500 mm" },
       { label: "Depth", value: "820 mm" },
@@ -646,6 +661,7 @@ export const products: Product[] = [
     description: "Curved modular lounge sofa with deep seating and plush cushions. Designed for collaboration zones.",
     image: "/products/sofas/ondara-bg.jpg",
     tag: "Popular",
+    imageFit: "plain",
     dimensions: [
       { label: "Width", value: "2300 mm" },
       { label: "Depth", value: "1000 mm" },
@@ -668,6 +684,7 @@ export const products: Product[] = [
     price: "Contact for pricing",
     description: "Oval-backed accent sofa with distinctive silhouette. A design-forward statement for modern lobbies.",
     image: "/products/sofas/ovalia-bg.jpg",
+    imageFit: "plain",
     dimensions: [
       { label: "Width", value: "1700 mm" },
       { label: "Depth", value: "870 mm" },
@@ -690,6 +707,7 @@ export const products: Product[] = [
     price: "Contact for pricing",
     description: "Three-seat sofa with button-tufted back and tapered walnut legs. Classic elegance for professional spaces.",
     image: "/products/sofas/tessa-bg.jpg",
+    imageFit: "plain",
     dimensions: [
       { label: "Width", value: "2050 mm" },
       { label: "Depth", value: "870 mm" },
@@ -712,6 +730,7 @@ export const products: Product[] = [
     price: "Contact for pricing",
     description: "Luxurious lounge sofa in warm brown with wrap-around armrests and deep seat cushions.",
     image: "/products/sofas/velora-br.jpg",
+    imageFit: "plain",
     dimensions: [
       { label: "Width", value: "2100 mm" },
       { label: "Depth", value: "950 mm" },

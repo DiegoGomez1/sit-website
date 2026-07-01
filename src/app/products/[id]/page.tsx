@@ -48,7 +48,8 @@ export default async function ProductDetailPage({ params }: { params: Promise<{ 
                 src={product.image}
                 alt={product.name}
                 fill
-                className="object-contain p-8"
+                className={product.imageFit === "cover" ? "object-cover" : "object-contain p-8"}
+                style={!product.imageFit ? { mixBlendMode: "multiply", filter: "brightness(1.25)" } : undefined}
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 priority
               />

@@ -10,12 +10,19 @@ export default function ProductCard({ product }: { product: Product }) {
       href={`/products/${product.id}`}
       className="group bg-white rounded-2xl overflow-hidden border border-[#0f1a14]/8 hover:border-[#1c4a2e]/30 hover:shadow-xl transition-all duration-300 flex flex-col"
     >
-      <div className="aspect-square relative overflow-hidden bg-[#f0f4f1]">
+      <div className="aspect-square relative overflow-hidden bg-white">
         <Image
           src={product.image}
           alt={product.name}
           fill
-          className="object-contain p-6 group-hover:scale-105 transition-transform duration-500"
+          className={`group-hover:scale-105 transition-transform duration-500 ${
+            product.imageFit === "cover" ? "object-cover" : "object-contain p-6"
+          }`}
+          style={
+            !product.imageFit
+              ? { mixBlendMode: "multiply", filter: "brightness(1.25)" }
+              : undefined
+          }
           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
         />
         {product.tag && (

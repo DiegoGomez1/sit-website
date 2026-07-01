@@ -17,15 +17,16 @@ export default function Navbar() {
   const pathname = usePathname();
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-[#f8f7f4]/90 backdrop-blur-md border-b border-[#0f1a14]/10">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-[#f8f7f4] border-b border-[#0f1a14]/10">
       <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
         <Link href="/" className="flex items-center">
           <Image
             src="/sit-logo.jpg"
             alt="SIT"
-            width={60}
-            height={48}
-            className="h-10 w-auto object-contain"
+            width={100}
+            height={80}
+            className="h-14 w-auto object-contain"
+            style={{ mixBlendMode: "multiply" }}
             priority
           />
         </Link>
